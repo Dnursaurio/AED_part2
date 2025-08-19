@@ -1,0 +1,3 @@
+﻿  BuscaMinas.cpp
+D:\AED_part2\BuscaMinas\BuscaMinas\BuscaMinas.cpp(8,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  BuscaMinas.vcxproj -> D:\AED_part2\BuscaMinas\x64\Debug\BuscaMinas.exe
