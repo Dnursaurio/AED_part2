@@ -1,0 +1,5 @@
+﻿  Main.cpp
+D:\AED_part2\BuscaMinas con Threads\BuscaMinas con Threads\Main.cpp(23,21): warning C4244: 'inicializando': conversión de '__int64' a 'int'; posible pérdida de datos
+D:\AED_part2\BuscaMinas con Threads\BuscaMinas con Threads\Main.cpp(24,24): warning C4244: 'inicializando': conversión de '__int64' a 'int'; posible pérdida de datos
+D:\AED_part2\BuscaMinas con Threads\BuscaMinas con Threads\Main.cpp(52,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  BuscaMinas con Threads.vcxproj -> D:\AED_part2\BuscaMinas con Threads\x64\Debug\BuscaMinas con Threads.exe
