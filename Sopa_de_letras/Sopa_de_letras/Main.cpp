@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -28,6 +29,23 @@ int main()
 		}
 		cout << endl;
 	}
+	cout << "ingrese la palabra que quiere buscar: ";
+	char palabra_clave;
+	cin >> palabra_clave;
+	char palabra_array[100];
+	cout << "la palabra que usted desea buscar es: " << palabra_array << endl;
+	int contador_de_palabras = 0;
+	char* deteccion_letras = palabra_array;
+	//detector de palabras
+	char*deteccion;
+	deteccion = new char[100];
+	//recorriendo a la derecha
 
+	for (char(*f)[10] = sopa_de_letras; f < sopa_de_letras + 10; f++)
+	{
+
+	}
+
+	cout << "La cantidad de veces que aparece " << palabra_clave << " en la sopa de letras es " << contador_de_palabras << " veces" << endl;
 	return 0;
 }
