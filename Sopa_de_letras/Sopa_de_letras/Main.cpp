@@ -18,12 +18,9 @@ int main()
 		{'P','S','S','N','T','T','T','P','A','P'},
 	};
 
-	char(*filas)[10] = sopa_de_letras;
-	char* columnas = *filas;
-
-	for (filas; filas < sopa_de_letras + 10; filas++)
+	for (char(*filas)[10] = sopa_de_letras; filas < sopa_de_letras + 10; filas++)
 	{
-		for (columnas; columnas < *filas + 10; columnas++)
+		for (char* columnas = *filas; columnas < *filas + 10; columnas++)
 		{
 			cout << *columnas << " ";
 		}
@@ -31,22 +28,38 @@ int main()
 	}
 
 	cout << "ingrese la palabra que quiere buscar: ";
-	char palabra_clave;
-	cin >> palabra_clave;
+	int nro_elementos = 0;
 	char palabra_array[100];
-	cout << "la palabra que usted desea buscar es: " << palabra_array << endl;
-	int contador_de_palabras = 0;
+	cin >> palabra_array;
 	char* deteccion_letras = palabra_array;
+	int longitud_original = strlen(palabra_array);
+	nro_elementos = nro_elementos + longitud_original;
+	cout << "la palabra que usted desea buscar es: " << palabra_array << " con " << nro_elementos << " elementos" << endl;
+	int contador_de_palabras = 0;
 	//detector de palabras
-	char*deteccion;
-	deteccion = new char[100];
 	//recorriendo a la derecha
-
 	for (char(*f)[10] = sopa_de_letras; f < sopa_de_letras + 10; f++)
 	{
-
+		//recorrer a la derecha
+		for (char* col_derecha = *f; col_derecha < *f + 10; col_derecha++)
+		{
+			if (*col_derecha == *deteccion_letras)
+			{
+				deteccion_letras++;
+				if (deteccion_letras - palabra_array == longitud_original)
+				{
+					contador_de_palabras++;
+					deteccion_letras = palabra_array;
+				}
+			}
+			else
+			{
+				deteccion_letras = palabra_array;
+				continue;
+			}
+		}
 	}
 
-	cout << "La cantidad de veces que aparece " << palabra_clave << " en la sopa de letras es " << contador_de_palabras << " veces" << endl;
+	cout << "La cantidad de veces que aparece " << palabra_array << " en la sopa de letras es " << contador_de_palabras << " veces" << endl;
 	return 0;
 }
