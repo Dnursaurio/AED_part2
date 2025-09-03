@@ -1,9 +1,16 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "D:\\AED_part2\\Sopa_de_letras\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{CC600E30-9EEE-43B4-AE4B-E9092E732864}|Sopa_de_letras\\Sopa_de_letras.vcxproj|D:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+=======
+  "WorkspaceRootPath": "E:\\AED_part2\\Sopa_de_letras\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC600E30-9EEE-43B4-AE4B-E9092E732864}|Sopa_de_letras\\Sopa_de_letras.vcxproj|E:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+>>>>>>> d696f61d7e2ae9bb6e3ad7d556798a69dc4f2b30
       "RelativeMoniker": "D:0:0:{CC600E30-9EEE-43B4-AE4B-E9092E732864}|Sopa_de_letras\\Sopa_de_letras.vcxproj|solutionrelative:Sopa_de_letras\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -14,6 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -28,9 +36,24 @@
               "RelativeDocumentMoniker": "Sopa_de_letras\\Main.cpp",
               "ToolTip": "D:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp",
               "RelativeToolTip": "Sopa_de_letras\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-23T15:46:27.526Z",
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "E:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp",
+              "RelativeDocumentMoniker": "Sopa_de_letras\\Main.cpp",
+              "ToolTip": "E:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp",
+              "RelativeToolTip": "Sopa_de_letras\\Main.cpp",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAMwA0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-25T19:41:42.989Z",
+>>>>>>> d696f61d7e2ae9bb6e3ad7d556798a69dc4f2b30
               "EditorCaption": ""
             }
           ]
