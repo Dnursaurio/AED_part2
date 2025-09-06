@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\AED_part2\\Sopa_de_letras\\",
+  "WorkspaceRootPath": "D:\\AED_part2\\Sopa_de_letras\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC600E30-9EEE-43B4-AE4B-E9092E732864}|Sopa_de_letras\\Sopa_de_letras.vcxproj|E:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{CC600E30-9EEE-43B4-AE4B-E9092E732864}|Sopa_de_letras\\Sopa_de_letras.vcxproj|D:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CC600E30-9EEE-43B4-AE4B-E9092E732864}|Sopa_de_letras\\Sopa_de_letras.vcxproj|solutionrelative:Sopa_de_letras\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,9 +24,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "E:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp",
+              "DocumentMoniker": "D:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp",
               "RelativeDocumentMoniker": "Sopa_de_letras\\Main.cpp",
-              "ToolTip": "E:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp",
+              "ToolTip": "D:\\AED_part2\\Sopa_de_letras\\Sopa_de_letras\\Main.cpp",
               "RelativeToolTip": "Sopa_de_letras\\Main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
