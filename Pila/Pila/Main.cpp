@@ -92,5 +92,19 @@ int main()
 	pila.push(37);	pila.print();
 	pila.push(47);	pila.print();
 	pila.push(48);	pila.print();
+	cout << "excediendo al vacio" << endl;
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	pila.pop(a);	pila.print();
+	cout << "rellenando pa que veas qe si es cierto" << endl;
+	pila.push(1);	pila.print();
 	cout << "----------------------------------------------" << endl;
 }

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED_part2\\Deque\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FFFCE9BF-EC5B-4342-8869-30E0742E956D}|Deque\\Deque.vcxproj|D:\\AED_part2\\Deque\\Deque\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FFFCE9BF-EC5B-4342-8869-30E0742E956D}|Deque\\Deque.vcxproj|solutionrelative:Deque\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "D:\\AED_part2\\Deque\\Deque\\Main.cpp",
+              "RelativeDocumentMoniker": "Deque\\Main.cpp",
+              "ToolTip": "D:\\AED_part2\\Deque\\Deque\\Main.cpp",
+              "RelativeToolTip": "Deque\\Main.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAFwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-07T01:46:32.691Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

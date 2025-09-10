@@ -1,0 +1,3 @@
+﻿  Main.cpp
+D:\AED_part2\Deque\Deque\Main.cpp(94,16): warning C4244: 'inicializando': conversión de '__int64' a 'int'; posible pérdida de datos
+  Deque.vcxproj -> D:\AED_part2\Deque\x64\Debug\Deque.exe
