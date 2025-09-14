@@ -28,99 +28,92 @@ int main()
 	}
 
 	cout << "ingrese la palabra que quiere buscar: ";
-	int nro_elementos = 0;
 	char palabra_array[100];
 	cin >> palabra_array;
-	char* deteccion_letras = palabra_array;
 	int longitud_original = strlen(palabra_array);
-	nro_elementos = nro_elementos + longitud_original;
-	cout << "la palabra que usted desea buscar es: " << palabra_array << " con " << nro_elementos << " elementos" << endl;
+	cout << "la palabra que usted desea buscar es: " << palabra_array << " con " << longitud_original << " elementos" << endl;
 	int contador_de_palabras = 0;
-	//detector de palabras
-	//recorriendo de derecha a izquierda
-	for (char(*f)[10] = sopa_de_letras; f < sopa_de_letras + 10; f++)
+	
+	//recorrido de izquierda a derecha
+	for (char(*filas)[10] = sopa_de_letras; filas < sopa_de_letras + 10; filas++)
 	{
-		//recorrer a la derecha
-		for (char* col_derecha = *f; col_derecha < *f + 10; col_derecha++)
+		for (char* columnas = *filas; columnas <= *filas + 10 - longitud_original; columnas++)
 		{
-			if (*col_derecha == *deteccion_letras)
+			bool coincidencia = true;
+			for (int i = 0; i < longitud_original; i++)
 			{
-				deteccion_letras++;
-				if (deteccion_letras - palabra_array == longitud_original)
+				if (*(columnas + i) != palabra_array[i])
 				{
-					contador_de_palabras++;
-					deteccion_letras = palabra_array;
+					coincidencia = false;
+					break;
 				}
 			}
-			else
+			if (coincidencia)
 			{
-				deteccion_letras = palabra_array;
-				continue;
-			}
-		}
-		//recorrido a la izquierda
-		deteccion_letras = palabra_array;
-		for (char* col_izquierda = *f + 9; col_izquierda >= *f; col_izquierda--)
-		{
-			if (*col_izquierda == *deteccion_letras)
-			{
-				deteccion_letras++;
-				if (deteccion_letras - palabra_array == longitud_original)
-				{
-					contador_de_palabras++;
-					deteccion_letras = palabra_array;
-				}
-			}
-			else
-			{
-				deteccion_letras = palabra_array;
-				continue;
+				contador_de_palabras++;
 			}
 		}
 	}
 
-	//recorriendo de arriba a abajo
-	for (int col = 0; col < 10; col++)
+	//recorrido de derecha a izquierda
+	for (char(*filas)[10] = sopa_de_letras; filas < sopa_de_letras + 10; filas++)
 	{
-		//recorrer de arriba a abajo
-		deteccion_letras = palabra_array;
-		for (char(*fil)[10] = sopa_de_letras; fil < sopa_de_letras + 10; fil++)
+		for (char* columnas = *filas + 9; columnas >= *filas + longitud_original - 1; columnas--)
 		{
-			char letra = *(*(fil)+col);
-			if (letra == *deteccion_letras)
+			bool coincidencia = true;
+			for (int i = 0; i < longitud_original; i++)
 			{
-				deteccion_letras++;
-				if (deteccion_letras - palabra_array == longitud_original)
+				if (*(columnas - i) != palabra_array[i])
 				{
-					contador_de_palabras++;
-					deteccion_letras = palabra_array;
+					coincidencia = false;
+					break;
 				}
 			}
-			else
+			if (coincidencia)
 			{
-				deteccion_letras = palabra_array;
-				continue;
+				contador_de_palabras++;
 			}
 		}
+	}
 
-		//recorrer de abajo a arriba
-		deteccion_letras = palabra_array;
-		for (char(*fil)[10] = sopa_de_letras + 9; fil >= sopa_de_letras; fil--)
+	//recorrido de arriba a abajo
+	for (int columnas = 0; columnas < 10; columnas++)
+	{
+		for (char(*filas)[10] = sopa_de_letras; filas <= sopa_de_letras + 10 - longitud_original; filas++)
 		{
-			char letra = *(*(fil)+col);
-			if (letra == *deteccion_letras)
+			bool coincidencia = true;
+			for (int i = 0; i < longitud_original; i++)
 			{
-				deteccion_letras++;
-				if (deteccion_letras - palabra_array == longitud_original)
+				if (*(*(filas + i) + columnas) != palabra_array[i])
 				{
-					contador_de_palabras++;
-					deteccion_letras = palabra_array;
+					coincidencia = false;
+					break;
 				}
 			}
-			else
+			if (coincidencia)
 			{
-				deteccion_letras = palabra_array;
-				continue;
+				contador_de_palabras++;
+			}
+		}
+	}
+
+	//recorrido de abajo hacia arriba
+	for (int columnas = 0; columnas < 10; columnas++)
+	{
+		for (char(*filas)[10] = sopa_de_letras + 9; filas >= sopa_de_letras + longitud_original - 1; filas--)
+		{
+			bool coincidencia = true;
+			for (int i = 0; i < longitud_original; i++)
+			{
+				if (*(*(filas - i) + columnas) != palabra_array[i])
+				{
+					coincidencia = false;
+					break;
+				}
+			}
+			if (coincidencia)
+			{
+				contador_de_palabras++;
 			}
 		}
 	}

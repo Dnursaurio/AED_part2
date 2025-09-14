@@ -1,4 +1,3 @@
 ﻿  Main.cpp
-D:\AED_part2\Sopa_de_letras\Sopa_de_letras\Main.cpp(35,24): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-  LINK : no se encontró D:\AED_part2\Sopa_de_letras\x64\Debug\Sopa_de_letras.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+D:\AED_part2\Sopa_de_letras\Sopa_de_letras\Main.cpp(33,24): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
   Sopa_de_letras.vcxproj -> D:\AED_part2\Sopa_de_letras\x64\Debug\Sopa_de_letras.exe

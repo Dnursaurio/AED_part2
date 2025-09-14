@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED_part2\\Cola Circular\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C1E5BE2-136C-4C4F-AA7A-BF9ABFA52014}|Cola Circular\\Cola Circular.vcxproj|D:\\AED_part2\\Cola Circular\\Cola Circular\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C1E5BE2-136C-4C4F-AA7A-BF9ABFA52014}|Cola Circular\\Cola Circular.vcxproj|solutionrelative:Cola Circular\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "D:\\AED_part2\\Cola Circular\\Cola Circular\\Main.cpp",
+              "RelativeDocumentMoniker": "Cola Circular\\Main.cpp",
+              "ToolTip": "D:\\AED_part2\\Cola Circular\\Cola Circular\\Main.cpp",
+              "RelativeToolTip": "Cola Circular\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-13T22:32:51.344Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

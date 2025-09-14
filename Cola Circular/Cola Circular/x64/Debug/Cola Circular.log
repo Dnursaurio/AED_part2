@@ -1,0 +1,3 @@
+﻿  Main.cpp
+D:\AED_part2\Cola Circular\Cola Circular\Main.cpp(78,1): warning C4715: 'Cola::pop': no todas las rutas de acceso de control devuelven un valor
+  Cola Circular.vcxproj -> D:\AED_part2\Cola Circular\x64\Debug\Cola Circular.exe
