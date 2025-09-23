@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AED_part2\\Lista\\",
+  "WorkspaceRootPath": "E:\\AED_part2\\Lista\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F394E78E-C7E6-40C8-B905-53BF74671A37}|Lista\\Lista.vcxproj|D:\\AED_part2\\Lista\\Lista\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F394E78E-C7E6-40C8-B905-53BF74671A37}|Lista\\Lista.vcxproj|E:\\AED_part2\\Lista\\Lista\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F394E78E-C7E6-40C8-B905-53BF74671A37}|Lista\\Lista.vcxproj|solutionrelative:Lista\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "D:\\AED_part2\\Lista\\Lista\\Main.cpp",
+              "DocumentMoniker": "E:\\AED_part2\\Lista\\Lista\\Main.cpp",
               "RelativeDocumentMoniker": "Lista\\Main.cpp",
-              "ToolTip": "D:\\AED_part2\\Lista\\Lista\\Main.cpp",
+              "ToolTip": "E:\\AED_part2\\Lista\\Lista\\Main.cpp",
               "RelativeToolTip": "Lista\\Main.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAawDAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-14T23:03:07.677Z",
               "EditorCaption": ""

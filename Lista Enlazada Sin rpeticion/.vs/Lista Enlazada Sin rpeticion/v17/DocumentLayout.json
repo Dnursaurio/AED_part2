@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\AED_part2\\Lista Enlazada Sin rpeticion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B15C12DF-637C-474D-A2E9-C5521C601011}|Lista Enlazada Sin rpeticion\\Lista Enlazada Sin rpeticion.vcxproj|E:\\AED_part2\\Lista Enlazada Sin rpeticion\\Lista Enlazada Sin rpeticion\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B15C12DF-637C-474D-A2E9-C5521C601011}|Lista Enlazada Sin rpeticion\\Lista Enlazada Sin rpeticion.vcxproj|solutionrelative:Lista Enlazada Sin rpeticion\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "E:\\AED_part2\\Lista Enlazada Sin rpeticion\\Lista Enlazada Sin rpeticion\\Main.cpp",
+              "RelativeDocumentMoniker": "Lista Enlazada Sin rpeticion\\Main.cpp",
+              "ToolTip": "E:\\AED_part2\\Lista Enlazada Sin rpeticion\\Lista Enlazada Sin rpeticion\\Main.cpp",
+              "RelativeToolTip": "Lista Enlazada Sin rpeticion\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-22T21:39:20.988Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

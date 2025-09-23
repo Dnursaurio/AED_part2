@@ -120,8 +120,8 @@ int main()
 	fl.pop_back();		fl.print();
 	fl.pop_front();		fl.print();
 	cout << "acceciendo a elementos con el operador []" << endl;
-	fl[1] = 2;	fl.print();
-	fl[0] = 21;	fl.print();
+	fl[1] = 2;			fl.print();
+	fl[0] = 21;			fl.print();
 	cout << "agregando un elemento mas" << endl;
 	fl.push_back(13);	fl.print();
 	cout << "----------------------------------------------------------------------------" << endl;
