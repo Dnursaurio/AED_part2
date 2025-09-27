@@ -7,16 +7,25 @@ struct Cola
 	int arr[10] = {};
 	int* head = nullptr;
 	int* tail = NULL;
-	int nro_elem = 0;
 
 	bool lleno()
 	{
-		return nro_elem == 10;
+		if (!head && !tail)
+		{
+			return 0;
+		}
+		int* next = tail + 1;
+		if (next == arr + 10)
+		{
+			next = arr;
+		}
+
+		return next == head;
 	}
 
 	bool vacio()
 	{
-		return nro_elem == 0;
+		return !head && !tail;
 	}
 
 	bool push(int x)
@@ -24,7 +33,6 @@ struct Cola
 		if (lleno())
 		{
 			cout << "cola llena" << endl;
-			return 0;
 		}
 		else
 		{
@@ -35,17 +43,13 @@ struct Cola
 			}
 			else
 			{
-				if (tail == arr + 9 && head > arr)
+				tail++;
+				if (tail == arr + 10)
 				{
 					tail = arr;
-				}
-				else
-				{
-					tail++;
 				}				
 			}
 			*tail = x;
-			nro_elem++;
 			return 1;
 		}
 	}
@@ -57,48 +61,40 @@ struct Cola
 			cout << "cola vacia" << endl;
 			return 0;
 		}
+		x = *head;
+		if (tail == head)
+		{
+			tail = nullptr;
+			head = nullptr;
+		}
 		else
 		{
-			x = *head;
-			if (head == arr + 9 && tail > arr)
+			head++;
+			if (head == arr + 10)
 			{
 				head = arr;
 			}
-			else
-			{
-				head++;
-			}
-			nro_elem--;
-			if (nro_elem == 0)
-			{
-				head = NULL;
-				tail = NULL;
-			}
 		}
+		return 1;
 	}
 
 	void print()
 	{
-		if (head <= tail)
+		if (vacio())
 		{
-			for (int* i = head; i <= tail; i++)
-			{
-				cout << *i << " ";
-			}
-			cout << endl;
+			cout << "cola vacia" << endl;
+			return;
 		}
-		if (tail < head)
+		int* i = head;
+		while (true)
 		{
-			for (int* i = head; i < arr + 9; i++)
-			{
-				cout << *i << " ";
-			}
-			for (int* i = arr; i <= tail; i++)
-			{
-				cout << *i << " ";
-			}
-			cout << endl;
+			cout << *i << " ";
+			if (i == tail) break;
+
+			i++;
+			if (i == arr + 10) i = arr; // wrap-around
 		}
+		cout << endl;
 	}
 };
 
