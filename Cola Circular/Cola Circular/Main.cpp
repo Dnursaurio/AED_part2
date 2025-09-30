@@ -2,6 +2,7 @@
 
 using namespace std;
 
+template <class T>
 struct Cola
 {
 	int arr[10] = {};
@@ -10,11 +11,7 @@ struct Cola
 
 	bool lleno()
 	{
-		if (!head && !tail)
-		{
-			return 0;
-		}
-		int* next = tail + 1;
+		T* next = tail + 1;
 		if (next == arr + 10)
 		{
 			next = arr;
@@ -28,7 +25,7 @@ struct Cola
 		return !head && !tail;
 	}
 
-	bool push(int x)
+	bool push(T x)
 	{
 		if (lleno())
 		{
@@ -54,7 +51,7 @@ struct Cola
 		}
 	}
 
-	bool pop(int& x)
+	bool pop(T& x)
 	{
 		if (vacio())
 		{
@@ -85,7 +82,7 @@ struct Cola
 			cout << "cola vacia" << endl;
 			return;
 		}
-		int* i = head;
+		T* i = head;
 		while (true)
 		{
 			cout << *i << " ";
@@ -101,7 +98,7 @@ struct Cola
 int main()
 {
 	cout << "-------------------------Cola Circular-------------------------" << endl;
-	Cola c;
+	Cola<int> c;
 	int a;
 	cout << "agregando elementos con push()" << endl;
 	c.push(3);	c.print();
