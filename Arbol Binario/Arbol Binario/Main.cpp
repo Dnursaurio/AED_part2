@@ -1,4 +1,6 @@
 #include <iostream>
+#include <stack>
+#include <utility>
 
 using namespace std;
 
@@ -56,7 +58,15 @@ public:
 
 	Node** remplazo(Node** ptr)
 	{
-		for (ptr = &((*ptr)->der); *ptr && (*ptr)->izq; ptr = &((*ptr)->izq));
+		Node** q = ptr;
+		if (rand() % 2 == 1)
+		{
+			for (ptr = &((*ptr)->der); *ptr && (*ptr)->izq; ptr = &((*ptr)->izq));
+		}
+		else
+		{
+			for (ptr = &((*ptr)->izq); *ptr && (*ptr)->der; ptr = &((*ptr)->der));
+		}
 		return ptr;
 	}
 
@@ -102,10 +112,49 @@ public:
 		InOrder(n->der);
 	}
 
+	void InOrderStack(Node* n)
+	{
+		stack<pair<Node*, int>> s;
+		s.push(make_pair(n, 0));
+		while (!s.empty())
+		{
+			switch (s.top().second)
+			{
+				case 0:
+					if (n->izq)
+					{
+						s.push(make_pair(n->izq, 0));
+					}
+					s.top().second += 1;
+					break;
+				case 1:
+					cout << n->valor << " ";
+					s.top().second += 1;
+					break;
+				case 2:
+					if (n->der)
+					{
+						s.push(make_pair(n->der, 0));
+					}
+					s.top().second += 1;
+					break;
+				case 3:
+					s.pop();
+					break;
+			}
+		}
+	}
+
 	void printInOrder()
 	{
 		Node* n = raiz;
 		InOrder(n);
+		cout << endl;
+	}
+
+	void printInOrderStack()
+	{
+		InOrderStack(raiz);
 		cout << endl;
 	}
 
@@ -129,6 +178,11 @@ int main()
 	bin.Remove(2);	bin.printInOrder();
 	cout << "caso 0 (no tiene hijos)" << endl;
 	bin.Remove(3);	bin.printInOrder();
+	cout << "Agregando elementos con InOrderStack" << endl;
+	bin.Insert(8);	bin.printInOrderStack();
+	bin.Insert(16);	bin.printInOrderStack();
+	bin.Insert(19);	bin.printInOrderStack();
+	bin.Insert(32);	bin.printInOrderStack();
 	cout << "-------------------------------------------------------------------------" << endl;
 
 	return 0;
