@@ -124,9 +124,12 @@ public:
 					if (n->izq)
 					{
 						s.push(make_pair(n->izq, 0));
-						n = s.top().first;
 					}
-					s.top().second += 1;
+					else
+					{
+						s.top().second += 1;
+					}
+					n = s.top().first;
 					break;
 				case 1:
 					cout << n->valor << " ";
@@ -182,11 +185,14 @@ int main()
 	bin.Remove(3);	bin.printInOrder();
 	cout << "Agregando elementos con InOrderStack" << endl;
 	bin.Insert(8);	bin.printInOrderStack();
+	bin.Insert(-1);	bin.printInOrderStack();
 	bin.Insert(16);	bin.printInOrderStack();
 	bin.Insert(19);	bin.printInOrderStack();
 	bin.Insert(32);	bin.printInOrderStack();
 	bin.Insert(7);	bin.printInOrderStack();
 	bin.Insert(6);	bin.printInOrderStack();
+	bin.Insert(-3);	bin.printInOrderStack();
+	bin.Insert(-2);	bin.printInOrderStack();
 	cout << "-------------------------------------------------------------------------" << endl;
 
 	return 0;
