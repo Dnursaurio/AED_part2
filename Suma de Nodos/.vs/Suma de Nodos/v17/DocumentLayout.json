@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\AED_part2\\Suma de Nodos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D9DCA99-BE5C-49D6-902B-E17A822C5C86}|Suma de Nodos\\Suma de Nodos.vcxproj|E:\\AED_part2\\Suma de Nodos\\Suma de Nodos\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0D9DCA99-BE5C-49D6-902B-E17A822C5C86}|Suma de Nodos\\Suma de Nodos.vcxproj|solutionrelative:Suma de Nodos\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 395,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "E:\\AED_part2\\Suma de Nodos\\Suma de Nodos\\Main.cpp",
+              "RelativeDocumentMoniker": "Suma de Nodos\\Main.cpp",
+              "ToolTip": "E:\\AED_part2\\Suma de Nodos\\Suma de Nodos\\Main.cpp",
+              "RelativeToolTip": "Suma de Nodos\\Main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-06T20:04:11.777Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
