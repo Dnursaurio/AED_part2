@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <queue>
 #include <utility>
 
 using namespace std;
@@ -112,6 +113,47 @@ public:
 		InOrder(n->der);
 	}
 
+	void Altura(Node* n, int altura, int& altura_max)
+	{
+		if (!n)
+		{
+			return;
+		}
+		if (altura > altura_max)
+		{
+			altura_max = altura;
+		}
+		Altura(n->izq, altura + 1, altura_max);
+		Altura(n->der, altura + 1, altura_max);
+	}
+
+	int printAltura(Node* n)
+	{
+		int altura_max = 0;
+		Altura(raiz, 1, altura_max);
+		return altura_max;
+	}
+
+	int altura2(Node* n)
+	{
+		if (!n)
+		{
+			return 0;
+		}
+		int izq = altura2(n->izq);
+		int der = altura2(n->der);
+		return max(izq, der) + 1;
+	}
+
+	void printInOrder()
+	{
+		Node* n = raiz;
+		InOrder(n);
+		cout << "altura: " << printAltura(n) << " ";
+		cout << "altura2: " << altura2(n);
+		cout << endl;
+	}
+
 	void InOrderStack(Node* n)
 	{
 		stack<pair<Node*, int>> s;
@@ -150,16 +192,40 @@ public:
 		}
 	}
 
-	void printInOrder()
-	{
-		Node* n = raiz;
-		InOrder(n);
-		cout << endl;
-	}
-
 	void printInOrderStack()
 	{
 		InOrderStack(raiz);
+		cout << "altura: " << printAltura(raiz);
+		cout << endl;
+	}
+
+	void PrintLevel(Node* n)
+	{
+		if (!n)
+		{
+			return;
+		}
+		queue<Node*>s;
+		s.push(n);
+		while (!s.empty())
+		{
+			Node* x = s.front();
+			cout << s.front()->valor << " ";
+			if (x->izq)
+			{
+				s.push(x->izq);
+			}
+			if (x->der)
+			{
+				s.push(x->der);
+			}
+			s.pop();
+		}
+	}
+
+	void ImprimirNivel()
+	{
+		PrintLevel(raiz);
 		cout << endl;
 	}
 
@@ -193,6 +259,8 @@ int main()
 	bin.Insert(6);	bin.printInOrderStack();
 	bin.Insert(-3);	bin.printInOrderStack();
 	bin.Insert(-2);	bin.printInOrderStack();
+	cout << "Utilizando impresion por niveles" << endl;
+	bin.ImprimirNivel();
 	cout << "-------------------------------------------------------------------------" << endl;
 
 	return 0;
