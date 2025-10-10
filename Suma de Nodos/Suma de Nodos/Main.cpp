@@ -19,6 +19,10 @@ struct Nodo
 
 void InOrder(Nodo* n)
 {
+	if (!n)
+	{
+		return;
+	}
 	InOrder(n->izq);
 	cout << n->valor << " ";
 	InOrder(n->der);
@@ -26,37 +30,26 @@ void InOrder(Nodo* n)
 
 Nodo* CrearArbol(int* ini, int* fin)
 {
-	Nodo* inicio_cola;
-	Nodo* fin_cola;
-	Nodo* raiz;
 	vector<Nodo*> c;
-	for (ini; ini < fin; ini++)
+	for (int* p = ini; p < fin; p++)
 	{
-		Nodo* n = new Nodo(*ini);
+		Nodo* n = new Nodo(*p);
 		c.push_back(n);
 	}
-	inicio_cola = c.front();
-	fin_cola = c.back();
-	while (c.size() != 1)
+	while (c.size() > 1)
 	{
 		int nuevo_valor = c[0]->valor + c[1]->valor;
 		Nodo* nuevo = new Nodo(nuevo_valor);
-		nuevo->izq = c.front();
+		nuevo->izq = c[0];
+		nuevo->der = c[1];
 		c.erase(c.begin());
-		inicio_cola = c.front();
-		nuevo->der = c.front();
 		c.erase(c.begin());
-		inicio_cola = c.front();
 		c.push_back(nuevo);
-		fin_cola = c.back();
-		
 	}
-	if (c.size() == 1)
-	{
-		raiz = c.front();
-		InOrder(raiz);
-		return raiz;
-	}
+
+	Nodo* raiz = c.front();
+	InOrder(raiz);
+	return raiz;
 }
 
 int main()
