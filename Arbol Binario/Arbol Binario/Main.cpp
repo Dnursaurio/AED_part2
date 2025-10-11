@@ -164,13 +164,16 @@ public:
 			{
 				case 0:
 					if (n->izq)
-					{
+					{	
 						s.push(make_pair(n->izq, 0));
 					}
 					else
 					{
+						n = s.top().first;
 						s.top().second += 1;
+						break;
 					}
+					s.top().second += 1;
 					n = s.top().first;
 					break;
 				case 1:

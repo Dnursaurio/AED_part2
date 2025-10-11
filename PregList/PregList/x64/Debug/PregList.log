@@ -1,0 +1,4 @@
+﻿  preg-list-preg-list-[Alonzo Estefano Cuela Rodriguez].cpp
+D:\AED_part2\PregList\PregList\preg-list-preg-list-[Alonzo Estefano Cuela Rodriguez].cpp(82,1): warning C4715: 'CList::Rem': no todas las rutas de acceso de control devuelven un valor
+D:\AED_part2\PregList\PregList\preg-list-preg-list-[Alonzo Estefano Cuela Rodriguez].cpp(69,1): warning C4715: 'CList::Ins': no todas las rutas de acceso de control devuelven un valor
+  PregList.vcxproj -> D:\AED_part2\PregList\x64\Debug\PregList.exe

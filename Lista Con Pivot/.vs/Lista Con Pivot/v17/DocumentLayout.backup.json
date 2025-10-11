@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED_part2\\Lista Con Pivot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BE8652B-6BB4-45E4-A289-8060533DE5F5}|Lista Con Pivot\\Lista Con Pivot.vcxproj|D:\\AED_part2\\Lista Con Pivot\\Lista Con Pivot\\preg_list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6BE8652B-6BB4-45E4-A289-8060533DE5F5}|Lista Con Pivot\\Lista Con Pivot.vcxproj|solutionrelative:Lista Con Pivot\\preg_list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "preg_list.cpp",
+              "DocumentMoniker": "D:\\AED_part2\\Lista Con Pivot\\Lista Con Pivot\\preg_list.cpp",
+              "RelativeDocumentMoniker": "Lista Con Pivot\\preg_list.cpp",
+              "ToolTip": "D:\\AED_part2\\Lista Con Pivot\\Lista Con Pivot\\preg_list.cpp",
+              "RelativeToolTip": "Lista Con Pivot\\preg_list.cpp",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAswLYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-11T02:52:05.078Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
