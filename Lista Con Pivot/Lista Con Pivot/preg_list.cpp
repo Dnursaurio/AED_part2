@@ -130,61 +130,7 @@ Node* DoublyLinkedList::get_tail()
 void DoublyLinkedList::split_list(Node* pivot)
 {
     //code go here
-    Node* i;
-    for (i = head; i; i = i->next)
-    {
-        if (i == pivot)
-        {
-            continue;
-        }
-        else
-        {
-            if (i->data < pivot->data)
-            {
-                if (i == head)
-                {
-                    continue;
-                }
-                else
-                {
-                    if (i->prev)
-                    {
-                        i->prev->next = i->next;
-                    }
-                    if (i->next)
-                    {
-                        i->next->prev = i->prev;
-                    }
-                    i->prev = head->prev;
-                    head->prev = i;
-                    i->next = head;
-                    head = head->prev;
-                }
-            }
-            else
-            {
-                if (i == tail)
-                {
-                    continue;
-                }
-                else
-                {
-                    if (i->next)
-                    {
-                        i->next->prev = i->prev;
-                    }
-                    if (i->prev)
-                    {
-                        i->prev->next = i->next;
-                    }
-                    i->prev = tail;
-                    i->next = tail->next;
-                    tail->next = i;
-                    tail = tail->next;
-                }
-            }
-        }
-    }
+    
 }
 
 int main()

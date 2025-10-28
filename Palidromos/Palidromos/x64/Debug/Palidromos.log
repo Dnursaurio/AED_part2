@@ -1,0 +1,3 @@
+﻿  preg-palindrome-preg-palindrome[Alonzo Estefano Cuela Rodriguez].cpp
+D:\AED_part2\Palidromos\Palidromos\preg-palindrome-preg-palindrome[Alonzo Estefano Cuela Rodriguez].cpp(89,20): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Palidromos.vcxproj -> D:\AED_part2\Palidromos\x64\Debug\Palidromos.exe

@@ -150,7 +150,7 @@ public:
 		Node* n = raiz;
 		InOrder(n);
 		cout << "altura: " << printAltura(n) << " ";
-		cout << "altura2: " << altura2(n);
+		cout << "altura 2: " << altura2(n);
 		cout << endl;
 	}
 
@@ -165,31 +165,30 @@ public:
 				case 0:
 					if (n->izq)
 					{	
+						s.top().second++;
 						s.push(make_pair(n->izq, 0));
-					}
-					else
-					{
-						n = s.top().first;
-						s.top().second += 1;
+						n = n->izq;
 						break;
 					}
 					s.top().second += 1;
-					n = s.top().first;
 					break;
 				case 1:
 					cout << n->valor << " ";
 					s.top().second += 1;
 					break;
 				case 2:
-					s.top().second += 1;
 					if (n->der)
 					{
+						s.top().second += 1;
 						s.push(make_pair(n->der, 0));
-						n = s.top().first;
+						n = n->der;
+						break;
 					}
+					s.top().second++;
 					break;
 				case 3:
 					s.pop();
+					if (!s.empty())n = s.top().first;
 					break;
 			}
 		}
