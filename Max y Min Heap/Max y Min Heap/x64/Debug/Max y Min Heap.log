@@ -1,17 +1,2 @@
 ﻿  Main.cpp
-E:\AED_part2\Max y Min Heap\Max y Min Heap\Main.cpp(38,12): error C2451: una expresión condicional de tipo "std::greater<int>" no es válida
-      E:\AED_part2\Max y Min Heap\Max y Min Heap\Main.cpp(38,12):
-      No hay disponible ningún operador de conversión definido por el usuario que pueda realizar esta conversión, o bien no se puede llamar al operador
-      E:\AED_part2\Max y Min Heap\Max y Min Heap\Main.cpp(38,12):
-      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
-          E:\AED_part2\Max y Min Heap\Max y Min Heap\Main.cpp(88,35):
-          Vea la referencia a la creación de una instancia de clase plantilla "heap<int,std::greater<int> (int,int)>" que se está compilando
-          E:\AED_part2\Max y Min Heap\Max y Min Heap\Main.cpp(28,7):
-          al compilar la función del miembro clase plantilla "void heap<int,std::greater<int> (int,int)>::Push(T)"
-          with
-          [
-              T=int
-          ]
-              E:\AED_part2\Max y Min Heap\Max y Min Heap\Main.cpp(90,11):
-              vea la primera referencia a “heap<int,std::greater<int> (int,int)>::Push” en “main”
-  
+  Max y Min Heap.vcxproj -> D:\AED_part2\Max y Min Heap\x64\Debug\Max y Min Heap.exe

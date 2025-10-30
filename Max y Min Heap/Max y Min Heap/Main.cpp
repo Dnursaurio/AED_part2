@@ -4,27 +4,40 @@
 
 using namespace std;
 
-/*template <class U>
-U Greater(U a, U b)
+template <class T>
+struct Greater
 {
-	return a > b;
-}
+	bool operator()(T a, T b)
+	{
+		return a > b;
+	}
+};
 
-template <class U>
-U Less(U a, U b)
+template <class T>
+struct Less
 {
-	return a < b;
-}*/
+	bool operator()(T a, T b)
+	{
+		return a < b;
+	}
+};
+
 
 template <class T, class C>
 class heap
 {
 public:
 
+	heap()
+	{
+		nro_elementos = 0;
+	}
+
 	T Top()
 	{
 		return Heap.front();
 	}
+
 	void Push(T valor)
 	{
 		C comp;
@@ -32,14 +45,19 @@ public:
 		Heap.push_back(valor);
 		nro_elementos++;
 		//2 reubicacion numerica
-		int i = (nro_elementos - 1) / 2;
-		while (Heap.size() > 1)
+		int i = nro_elementos - 1;
+		while (i > 0)
 		{
-			if (comp(Heap[i], valor))
-				swap(Heap[i], valor);
+			int padre = (i - 1) / 2;
+			if (comp(Heap[i], Heap[padre]))
+			{
+				swap(Heap[i], Heap[padre]);
+			}
 			else
-				swap(valor, valor);
-			i = (i - 1) / 2;
+			{
+				break;
+			}
+			i = padre;
 		}
 	}
 
@@ -47,25 +65,35 @@ public:
 	{
 		C comp;
 		//1 cmabio el primer elementos con el ultimo
-		Heap.swap(Heap.front(), Heap.back());
+		swap(Heap.front(), Heap.back());
 		//2 "elminamos el ultimo elemento, unicamente lo ignoramos XD"
+		Heap.pop_back();
 		nro_elementos -= 1;
 		//3 reubicacion numerica
-		int* principal = &(Heap.front());
-		//hijo "izquierdo"
-		int* izq = &(Heap.front() * 2 + 1);
-		//Hijo Derecho
-		int* der = &(Heap.front() * 2 + 2);
-		while (Heap.size() > 1)
+		int i = 0;
+
+		while (true)
 		{
-			int* guardar = &(C(*izq, *der));
-			if (comp(C(*izq,*der), *principal))
-				swap(C(*izq, *der), *principal);
+			int izq = i * 2 + 1;
+			int der = i * 2 + 2;
+			if (izq >= nro_elementos)
+			{
+				return;
+			}
+			int Hijo = izq;
+			if (der < nro_elementos && comp(Heap[der], Heap[izq]))
+			{
+				Hijo = der;
+			}
+			if (comp(Heap[Hijo], Heap[i]))
+			{
+				swap(Heap[i], Heap[Hijo]);
+			}
 			else
-				swap(*principal, *principal);
-			principal = guardar;
-			izq = &(principal * 2 + 1);
-			der = &(principal * 2 + 2);
+			{
+				break;
+			}
+			i = Hijo;
 		}
 	}
 
@@ -80,15 +108,30 @@ public:
 
 private:
 	vector<T> Heap;
-	T nro_elementos;
+	int nro_elementos;
 };
 
 int main() 
 {
-	heap<int, greater<int>(int,int)> maxH;
+	heap<int, Greater<int>> maxH;
 
 	maxH.Push(5);
 	maxH.Push(2);
 	maxH.Push(8);
 	maxH.Print();
+	maxH.Push(7);
+	maxH.Print();
+	maxH.Pop();
+	maxH.Print();
+
+	heap<int, Less<int>> minH;
+
+	minH.Push(5);
+	minH.Push(2);
+	minH.Push(8);
+	minH.Print();
+	minH.Push(7);
+	minH.Print();
+	minH.Pop();
+	minH.Print();
 }

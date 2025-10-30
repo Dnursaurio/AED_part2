@@ -1,2 +1,10 @@
 ﻿  Main.cpp
-  Graficacion.vcxproj -> E:\aed_part2\graficacion\x64\Debug\Graficacion.exe
+D:\AED_part2\Graficacion\Graficacion\Main.cpp(47,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion\Graficacion\Main.cpp(47,38): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion\Graficacion\Main.cpp(47,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion\Graficacion\Main.cpp(47,30): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion\Graficacion\Main.cpp(55,54): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion\Graficacion\Main.cpp(55,46): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion\Graficacion\Main.cpp(94,17): warning C4804: '<': uso no seguro del tipo 'bool' en la operación
+D:\AED_part2\Graficacion\Graficacion\Main.cpp(99,17): warning C4804: '<': uso no seguro del tipo 'bool' en la operación
+  Graficacion.vcxproj -> D:\AED_part2\Graficacion\x64\Debug\Graficacion.exe
