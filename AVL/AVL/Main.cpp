@@ -287,10 +287,31 @@ public:
 			if (!s.empty())
 			{
 				par = s.top();
-				s.pop();
 				padre_par = s.top();
+				int dif = diferencia_de_alturas(par);
+				if (dif < -1)
+				{
+					if (diferencia_de_alturas(par->der) <= 0)
+					{
+						RR(par, padre_par);
+					}
+					if (diferencia_de_alturas(par->der) > 0)
+					{
+						RL(par, padre_par);
+					}
+				}
+				if (dif > 1)
+				{
+					if (diferencia_de_alturas(par->izq) >= 0)
+					{
+						LL(par, padre_par);
+					}
+					if (diferencia_de_alturas(par->izq) < 0)
+					{
+						LR(par, padre_par);
+					}
+				}
 			}
-			
 			return 1;
 		}
 	}
@@ -330,5 +351,11 @@ int main()
 	avl.Insert(1);
 	avl.Insert(30);
 	avl.Insert(15);
+	avl.PrintInOrder();
+	avl.Remove(1);
+	avl.PrintInOrder();
+	avl.Remove(10);
+	avl.Remove(0);
+	avl.Remove(4);
 	avl.PrintInOrder();
 }
