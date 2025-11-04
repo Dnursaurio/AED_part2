@@ -1,13 +1,13 @@
 #include <iostream>
-#include <algorithm>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
 template <class T>
 struct Greater
 {
-	bool operator()(T a, T b)
+	bool operator ()(T a, T b)
 	{
 		return a > b;
 	}
@@ -16,122 +16,115 @@ struct Greater
 template <class T>
 struct Less
 {
-	bool operator()(T a, T b)
+	bool operator ()(T a, T b)
 	{
 		return a < b;
 	}
 };
 
-
-template <class T, class C>
-class heap
+template<class T, class C>
+class Heap
 {
 public:
-
-	heap()
+	Heap()
 	{
-		nro_elementos = 0;
-	}
-
-	T Top()
-	{
-		return Heap.front();
+		nro_elem = 0;
 	}
 
 	void Push(T valor)
 	{
 		C comp;
-		//1 agregamos el elemento en la posicion n+1 (el final del vector)
-		Heap.push_back(valor);
-		nro_elementos++;
-		//2 reubicacion numerica
-		int i = nro_elementos - 1;
+		arbol.push_back(valor);
+		nro_elem++;
+		int i = nro_elem - 1;
 		while (i > 0)
 		{
 			int padre = (i - 1) / 2;
-			if (comp(Heap[i], Heap[padre]))
+			if (comp(arbol[i], arbol[padre]))
 			{
-				swap(Heap[i], Heap[padre]);
+				swap(arbol[i], arbol[padre]);
+				i = padre;
 			}
 			else
 			{
 				break;
 			}
-			i = padre;
 		}
 	}
 
 	void Pop()
 	{
 		C comp;
-		//1 cmabio el primer elementos con el ultimo
-		swap(Heap.front(), Heap.back());
-		//2 "elminamos el ultimo elemento, unicamente lo ignoramos XD"
-		Heap.pop_back();
-		nro_elementos -= 1;
-		//3 reubicacion numerica
+		if (arbol.size() > 0)
+		{
+			swap(arbol.front(), arbol.back());
+			arbol.pop_back();
+		}
+		nro_elem--;
 		int i = 0;
-
 		while (true)
 		{
 			int izq = i * 2 + 1;
 			int der = i * 2 + 2;
-			if (izq >= nro_elementos)
+			if (izq >= nro_elem - 1)
 			{
 				return;
 			}
-			int Hijo = izq;
-			if (der < nro_elementos && comp(Heap[der], Heap[izq]))
+			int Hijo_mas_util = izq;
+			if (der < nro_elem && comp(arbol[izq], arbol[der]))
 			{
-				Hijo = der;
+				Hijo_mas_util = der;
 			}
-			if (comp(Heap[Hijo], Heap[i]))
+			if (comp(arbol[Hijo_mas_util], arbol[i]))
 			{
-				swap(Heap[i], Heap[Hijo]);
+				swap(arbol[i], arbol[Hijo_mas_util]);
 			}
 			else
 			{
 				break;
 			}
-			i = Hijo;
+			i = Hijo_mas_util;
 		}
 	}
 
 	void Print()
 	{
-		for (int i = 0; i < nro_elementos; i++)
+		for (int i = 0; i < nro_elem; i++)
 		{
-			cout << Heap[i] << " ";
+			cout << arbol[i] << " ";
 		}
 		cout << endl;
-	}	
+	}
 
 private:
-	vector<T> Heap;
-	int nro_elementos;
+	int nro_elem;
+	vector<T> arbol;
 };
 
-int main() 
+int main()
 {
-	heap<int, Greater<int>> maxH;
+	Heap<int, Greater<int>> maxHeap;
+	maxHeap.Push(10);
+	maxHeap.Push(1);
+	maxHeap.Push(14);
+	maxHeap.Push(2);
+	maxHeap.Push(0);
+	maxHeap.Print();
+	maxHeap.Pop();
+	maxHeap.Pop();
+	maxHeap.Pop();
+	maxHeap.Print();
+	Heap<int, Less<int>> minHeap;
+	minHeap.Push(10);
+	minHeap.Push(34);
+	minHeap.Push(20);
+	minHeap.Push(13);
+	minHeap.Push(12);
+	minHeap.Print();
+	minHeap.Pop();
+	minHeap.Pop();
+	minHeap.Pop();
+	minHeap.Print();
 
-	maxH.Push(5);
-	maxH.Push(2);
-	maxH.Push(8);
-	maxH.Print();
-	maxH.Push(7);
-	maxH.Print();
-	maxH.Pop();
-	maxH.Print();
-
-	heap<int, Less<int>> minH;
-
-	minH.Push(5);
-	minH.Push(2);
-	minH.Push(8);
-	minH.Print();
-	minH.Push(7);
-	minH.Print();
-	minH.Pop();
-	minH.Print();
+	return 0;
 }
