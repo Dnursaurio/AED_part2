@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AED_part2\\AVL\\",
+  "WorkspaceRootPath": "E:\\AED_part2\\AVL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6793C789-4B8B-4B0C-9F1C-0EBD3028B290}|AVL\\AVL.vcxproj|D:\\AED_part2\\AVL\\AVL\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6793C789-4B8B-4B0C-9F1C-0EBD3028B290}|AVL\\AVL.vcxproj|E:\\AED_part2\\AVL\\AVL\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6793C789-4B8B-4B0C-9F1C-0EBD3028B290}|AVL\\AVL.vcxproj|solutionrelative:AVL\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,13 +24,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "D:\\AED_part2\\AVL\\AVL\\Main.cpp",
+              "DocumentMoniker": "E:\\AED_part2\\AVL\\AVL\\Main.cpp",
               "RelativeDocumentMoniker": "AVL\\Main.cpp",
-              "ToolTip": "D:\\AED_part2\\AVL\\AVL\\Main.cpp",
+              "ToolTip": "E:\\AED_part2\\AVL\\AVL\\Main.cpp",
               "RelativeToolTip": "AVL\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACABAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-01T23:08:47.103Z",
+              "WhenOpened": "2025-11-04T21:09:10.414Z",
               "EditorCaption": ""
             }
           ]
