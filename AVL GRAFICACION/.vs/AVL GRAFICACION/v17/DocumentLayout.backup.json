@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED_part2\\AVL GRAFICACION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE6F3EF2-23FB-4699-881B-FF1B504265F2}|AVL GRAFICACION\\AVL GRAFICACION.vcxproj|D:\\AED_part2\\AVL GRAFICACION\\AVL GRAFICACION\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FE6F3EF2-23FB-4699-881B-FF1B504265F2}|AVL GRAFICACION\\AVL GRAFICACION.vcxproj|solutionrelative:AVL GRAFICACION\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "D:\\AED_part2\\AVL GRAFICACION\\AVL GRAFICACION\\Main.cpp",
+              "RelativeDocumentMoniker": "AVL GRAFICACION\\Main.cpp",
+              "ToolTip": "D:\\AED_part2\\AVL GRAFICACION\\AVL GRAFICACION\\Main.cpp",
+              "RelativeToolTip": "AVL GRAFICACION\\Main.cpp",
+              "ViewState": "AgIAACQBAAAAAAAAAAAUwDwBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-10T01:14:38.525Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

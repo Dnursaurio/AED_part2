@@ -38,6 +38,72 @@ public:
 		nro_elem = 0;
 	}
 
+	void Set(int x, int y, int val)
+	{
+		Nodo** FX;
+		if (val == 0)
+		{
+			if (!FindX(x, y, FX))
+			{
+				return;
+			}
+			Remove(x, y);
+			return;
+		}
+		else
+		{
+			if (FindX(x, y, FX))
+			{
+				(*FX)->valor = val;
+				return;
+			}
+			Insert(x, y, val);
+			return;
+		}
+	}
+
+	int Get(int x, int y)
+	{
+		Nodo** FX;
+		if (!FindX(x, y, FX))
+		{
+			cout << "Alli no hay nada (valor vacio 0)" << endl;
+			return 0;
+		}
+		else
+		{
+			cout << "el valor en la posicion: (" << x << ", " << y << ") es " << (*FX)->valor << endl;
+			return (*FX)->valor;
+		}
+	}
+
+	void print()
+	{
+		for (int x = 0; x < tam; x++)
+		{
+			Nodo* actual = EjeX[x];
+			for (int y = 0; y < tam; y++)
+			{
+				if (actual && actual->y == y)
+				{
+					cout << actual->valor << " ";
+					actual = actual->abajo;
+				}
+				else
+				{
+					cout << "0 ";
+				}
+			}
+			cout << endl;
+		}
+	}
+
+private:
+	int tam;
+	Nodo** EjeX;
+	Nodo** EjeY;
+	int nro_elem;
+
 	bool FindX(int x, int y, Nodo**& FX)
 	{
 		//Ingresamos en X y modificamos Y
@@ -65,6 +131,8 @@ public:
 		Nodo** FX = nullptr;
 		Nodo** FY = nullptr;
 		bool si_X = FindX(x, y, FX);
+		bool si_Y = FindY(x, y, FY);
+
 		if (si_X)
 		{
 			return 0;
@@ -88,6 +156,8 @@ public:
 		Nodo** FX = 0;
 		Nodo** FY = 0;
 		bool si_X = FindX(x, y, FX);
+		bool si_Y = FindY(x, y, FY);
+
 		if (!si_X)
 		{
 			return 0;
@@ -107,15 +177,38 @@ public:
 			return 1;
 		}
 	}
-
-private:
-	int tam;
-	Nodo** EjeX;
-	Nodo** EjeY;
-	int nro_elem;
 };
 
 int main()
 {
+	MatrizEsparsa me(4);
+	me.Set(0, 0, 1);
+	me.Set(0, 1, 2);
+	me.Set(0, 2, 3);
+	me.Set(0, 3, 4);
+	me.Set(1, 0, 5);
+	me.Set(1, 1, 6);
+	me.Set(1, 2, 7);
+	me.Set(1, 3, 8);
+	me.Set(2, 0, 9);
+	me.Set(2, 1, 10);
+	me.Set(2, 2, 11);
+	me.Set(2, 3, 12);
+	me.Set(3, 0, 13);
+	me.Set(3, 1, 14);
+	me.Set(3, 2, 15);
+	me.Set(3, 3, 16);
+	me.print();
+	cout << "------------------------------------" << endl;
+	me.Get(1, 0);
+	me.Set(0, 0, 0);
+	me.print();
+	cout << "------------------------------------" << endl;
+	me.Set(0, 0, 0);
+	me.Set(0, 1, 35);
+	me.print();
+	cout << "------------------------------------" << endl;
+	me.Get(0, 0);
 
+	return 0;
 }
