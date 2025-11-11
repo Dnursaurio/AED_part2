@@ -38,43 +38,34 @@ public:
 		nro_elem = 0;
 	}
 
-	void Set(int x, int y, int val)
+	struct objx
 	{
-		Nodo** FX;
-		if (val == 0)
+		objx(MatrizEsparsa* matriz, int x, int y)
 		{
-			if (!FindX(x, y, FX))
-			{
-				return;
-			}
-			Remove(x, y);
-			return;
+			mtr = matriz;
+			cx = x;
+			cy = y;
 		}
-		else
-		{
-			if (FindX(x, y, FX))
-			{
-				(*FX)->valor = val;
-				return;
-			}
-			Insert(x, y, val);
-			return;
-		}
-	}
 
-	int Get(int x, int y)
+		objx operator= (int v)
+		{
+			mtr->Set(cx, cy, v);
+			return *this;
+		}
+
+		operator int()
+		{
+			return mtr->Get(cx, cy);
+		}
+
+		MatrizEsparsa* mtr;
+		int cx;
+		int cy;
+	};
+
+	objx operator() (int x, int y)
 	{
-		Nodo** FX;
-		if (!FindX(x, y, FX))
-		{
-			cout << "Alli no hay nada (valor vacio 0)" << endl;
-			return 0;
-		}
-		else
-		{
-			cout << "el valor en la posicion: (" << x << ", " << y << ") es " << (*FX)->valor << endl;
-			return (*FX)->valor;
-		}
+		return objx(this, x, y);
 	}
 
 	void print()
@@ -177,38 +168,91 @@ private:
 			return 1;
 		}
 	}
+
+	void Set(int x, int y, int val)
+	{
+		Nodo** FX;
+		if (val == 0)
+		{
+			if (!FindX(x, y, FX))
+			{
+				return;
+			}
+			Remove(x, y);
+			return;
+		}
+		else
+		{
+			if (FindX(x, y, FX))
+			{
+				(*FX)->valor = val;
+				return;
+			}
+			Insert(x, y, val);
+			return;
+		}
+	}
+
+	int Get(int x, int y)
+	{
+		Nodo** FX;
+		if (x > tam - 1 || y > tam - 1)
+		{
+			cout << "Posicion (" << x << ", " << y << ") fuera de rango" << endl;
+			return 0;
+		}
+		else
+		{
+			if (!FindX(x, y, FX))
+			{
+				cout << "Alli no hay nada (valor vacio 0)" << endl;
+				return 0;
+			}
+			else
+			{
+				cout << "el valor en la posicion: (" << x << ", " << y << ") es " << (*FX)->valor << endl;
+				return (*FX)->valor;
+			}
+		}
+	}
 };
 
 int main()
 {
 	MatrizEsparsa me(4);
-	me.Set(0, 0, 1);
-	me.Set(0, 1, 2);
-	me.Set(0, 2, 3);
-	me.Set(0, 3, 4);
-	me.Set(1, 0, 5);
-	me.Set(1, 1, 6);
-	me.Set(1, 2, 7);
-	me.Set(1, 3, 8);
-	me.Set(2, 0, 9);
-	me.Set(2, 1, 10);
-	me.Set(2, 2, 11);
-	me.Set(2, 3, 12);
-	me.Set(3, 0, 13);
-	me.Set(3, 1, 14);
-	me.Set(3, 2, 15);
-	me.Set(3, 3, 16);
+	me(0, 0) = 1;
+	me(0, 1) = 2;
+	me(0, 2) = 3;
+	me(0, 3) = 4;
+	me(1, 0) = 5;
+	me(1, 1) = 6;
+	me(1, 2) = 7;
+	me(1, 3) = 8;
+	me(2, 0) = 9;
+	me(2, 1) = 10;
+	me(2, 2) = 11;
+	me(2, 3) = 12;
+	me(3, 0) = 13;
+	me(3, 1) = 14;
+	me(3, 2) = 15;
+	me(3, 3) = 16;
+
+	
 	me.print();
 	cout << "------------------------------------" << endl;
-	me.Get(1, 0);
-	me.Set(0, 0, 0);
+	int a = 0; 
+	a = me(1, 0);
+	a = me(3, 2);
+	a = me(4, 0);
+	me(0, 0) = 0;
 	me.print();
 	cout << "------------------------------------" << endl;
-	me.Set(0, 0, 0);
-	me.Set(0, 1, 35);
+	me(0, 0) = 0;
+	me(0, 1) = 35;
 	me.print();
 	cout << "------------------------------------" << endl;
-	me.Get(0, 0);
+	a = me(0, 0);
+	a = me(3, 1);
 
 	return 0;
 }

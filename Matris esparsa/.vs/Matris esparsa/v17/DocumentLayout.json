@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AED_part2\\Matris esparsa\\",
+  "WorkspaceRootPath": "E:\\AED_part2\\Matris esparsa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63A7ECD8-791C-4B1E-B715-561B2D6075CD}|Matris esparsa\\Matris esparsa.vcxproj|D:\\AED_part2\\Matris esparsa\\Matris esparsa\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{63A7ECD8-791C-4B1E-B715-561B2D6075CD}|Matris esparsa\\Matris esparsa.vcxproj|E:\\AED_part2\\Matris esparsa\\Matris esparsa\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{63A7ECD8-791C-4B1E-B715-561B2D6075CD}|Matris esparsa\\Matris esparsa.vcxproj|solutionrelative:Matris esparsa\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "D:\\AED_part2\\Matris esparsa\\Matris esparsa\\main.cpp",
+              "DocumentMoniker": "E:\\AED_part2\\Matris esparsa\\Matris esparsa\\main.cpp",
               "RelativeDocumentMoniker": "Matris esparsa\\main.cpp",
-              "ToolTip": "D:\\AED_part2\\Matris esparsa\\Matris esparsa\\main.cpp",
+              "ToolTip": "E:\\AED_part2\\Matris esparsa\\Matris esparsa\\main.cpp",
               "RelativeToolTip": "Matris esparsa\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAgwP4AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-06T21:53:30.538Z",
               "EditorCaption": ""
