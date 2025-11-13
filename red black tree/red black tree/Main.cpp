@@ -41,7 +41,7 @@ public:
 		while (*ptr && (*ptr)->valor != v)
 		{
 			s.push(*ptr);
-			if ((*ptr)->valor < v)
+			if ((*ptr)->valor > v)
 			{
 				ptr = &((*ptr)->izq);
 			}
