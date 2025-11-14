@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AED_part2\\red black tree\\",
+  "WorkspaceRootPath": "E:\\AED_part2\\red black tree\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{957079B1-A8D3-41A5-AE3B-723B263A624F}|red black tree\\red black tree.vcxproj|D:\\AED_part2\\red black tree\\red black tree\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{957079B1-A8D3-41A5-AE3B-723B263A624F}|red black tree\\red black tree.vcxproj|E:\\AED_part2\\red black tree\\red black tree\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{957079B1-A8D3-41A5-AE3B-723B263A624F}|red black tree\\red black tree.vcxproj|solutionrelative:red black tree\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "D:\\AED_part2\\red black tree\\red black tree\\Main.cpp",
+              "DocumentMoniker": "E:\\AED_part2\\red black tree\\red black tree\\Main.cpp",
               "RelativeDocumentMoniker": "red black tree\\Main.cpp",
-              "ToolTip": "D:\\AED_part2\\red black tree\\red black tree\\Main.cpp",
+              "ToolTip": "E:\\AED_part2\\red black tree\\red black tree\\Main.cpp",
               "RelativeToolTip": "red black tree\\Main.cpp",
-              "ViewState": "AgIAAH0AAAAAAAAAAADwvysAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAG8BAAAAAAAAAAAAAJ4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-10T21:27:37.778Z",
               "EditorCaption": ""
