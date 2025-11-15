@@ -1,0 +1,16 @@
+﻿  Main.cpp
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(395,53): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(395,45): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(417,53): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(417,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(417,37): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(417,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(421,53): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(421,42): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(421,37): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(421,34): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(446,39): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(446,35): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(499,17): warning C4804: '<': uso no seguro del tipo 'bool' en la operación
+D:\AED_part2\Graficacion Red Black Tree\Graficacion Red Black Tree\Main.cpp(503,17): warning C4804: '<': uso no seguro del tipo 'bool' en la operación
+  Graficacion Red Black Tree.vcxproj -> D:\AED_part2\Graficacion Red Black Tree\x64\Debug\Graficacion Red Black Tree.exe
