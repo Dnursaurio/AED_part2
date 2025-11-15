@@ -60,7 +60,7 @@ void DrawCircle(SDL_Renderer* renderer, int cx, int cy, int r) {
 
 // Dibuja texto centrado
 void DrawText(SDL_Renderer* renderer, TTF_Font* font, const std::string& text, int x, int y, SDL_Color color) {
-    SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(), 3,color);
+    SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(), 0,color);
     SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
     SDL_FRect dstRect = { (float)(x - surface->w / 2), (float)(y - surface->h / 2), (float)surface->w, (float)surface->h };
     SDL_RenderTexture(renderer, texture, NULL, &dstRect);

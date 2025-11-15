@@ -233,7 +233,7 @@ void DrawCircle(SDL_Renderer* renderer, int x, int y, int r) {
 
 void DrawText(SDL_Renderer* renderer, TTF_Font* font, const string& text, int x, int y) {
     SDL_Color color = { 0, 0, 0, 255 };
-    SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(), 3, color);
+    SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(), 0, color);
     if (!surface) return;
     SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer, surface);
     SDL_FRect dst = { (float)x - surface->w / 2, (float)y - surface->h / 2, (float)surface->w, (float)surface->h };
@@ -301,19 +301,11 @@ void RenderAVL(AVL& avl) {
 
 int main() {
     AVL avl;
-    avl.Insert(1);
-    avl.Insert(8);
-    avl.Insert(3);
-    avl.Insert(7);
-    avl.Insert(2);
-    avl.Insert(9);
-    avl.Insert(4);
-    avl.Insert(5);
-    avl.Insert(6);
-    avl.Insert(21);
-    avl.Insert(25);
-    avl.Insert(36);
-
+    int arr[12] = { 1,8,3,7,2,9,4,5,6,21,25,36 };
+    for (int i = 0; i < 12; i++)
+    {
+        avl.Insert(arr[i]);
+    }
     avl.PrintInOrder();
 
     RenderAVL(avl);
