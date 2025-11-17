@@ -1,0 +1,12 @@
+﻿  Main.cpp
+D:\AED_part2\Tabla Hash\Tabla Hash\Main.cpp(13,3): warning C4984: "if constexpr" es una extensión del lenguaje C++17
+      D:\AED_part2\Tabla Hash\Tabla Hash\Main.cpp(13,3):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\AED_part2\Tabla Hash\Tabla Hash\Main.cpp(9,8):
+          al compilar la plantilla de clase 'ToInt'
+  
+D:\AED_part2\Tabla Hash\Tabla Hash\Main.cpp(17,8): warning C4984: "if constexpr" es una extensión del lenguaje C++17
+D:\AED_part2\Tabla Hash\Tabla Hash\Main.cpp(21,8): warning C4984: "if constexpr" es una extensión del lenguaje C++17
+D:\AED_part2\Tabla Hash\Tabla Hash\Main.cpp(25,8): warning C4984: "if constexpr" es una extensión del lenguaje C++17
+D:\AED_part2\Tabla Hash\Tabla Hash\Main.cpp(29,8): warning C4984: "if constexpr" es una extensión del lenguaje C++17
+  Tabla Hash.vcxproj -> D:\AED_part2\Tabla Hash\x64\Debug\Tabla Hash.exe
