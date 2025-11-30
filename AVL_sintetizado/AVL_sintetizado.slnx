@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="AVL_sintetizado/AVL_sintetizado.vcxproj" Id="3a7e4491-377a-4b4f-8c9e-d4d8f3a6f212" />
+</Solution>
